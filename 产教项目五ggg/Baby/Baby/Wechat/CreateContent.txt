@@ -1,0 +1,16 @@
+﻿{
+
+   "articles": [
+		   {
+					"title":"今天天气很好",
+					"thumb_media_id": THUMB_MEDIA_ID,
+					"author": "小雪雪",
+					"digest": "asdsa",
+					"show_cover_pic": 1,
+					"content": "sjghdkjshjkdhsjhdjshjdhjs",
+					"content_source_url": "http://www.baidu.com",
+					"need_open_comment":1,
+					"only_fans_can_comment":1
+			},
+	 ]
+}

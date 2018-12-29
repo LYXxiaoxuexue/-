@@ -1,0 +1,2721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BabyDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BabyDBModelStoreContainer">
+    <EntitySet Name="ADintegral" EntityType="BabyDBModel.Store.ADintegral" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdministratorsSet" EntityType="BabyDBModel.Store.AdministratorsSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Album" EntityType="BabyDBModel.Store.Album" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Announcementform" EntityType="BabyDBModel.Store.Announcementform" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BabyInfo" EntityType="BabyDBModel.Store.BabyInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Brand" EntityType="BabyDBModel.Store.Brand" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="chat" EntityType="BabyDBModel.Store.chat" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Collection" EntityType="BabyDBModel.Store.Collection" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Commodityconcern" EntityType="BabyDBModel.Store.Commodityconcern" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Commoditylist" EntityType="BabyDBModel.Store.Commoditylist" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Commoditypicture" EntityType="BabyDBModel.Store.Commoditypicture" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CommodityType" EntityType="BabyDBModel.Store.CommodityType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Evaluation" EntityType="BabyDBModel.Store.Evaluation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Footprint" EntityType="BabyDBModel.Store.Footprint" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Growthrecord" EntityType="BabyDBModel.Store.Growthrecord" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="KnowledgeSet" EntityType="BabyDBModel.Store.KnowledgeSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="knowledgeType" EntityType="BabyDBModel.Store.knowledgeType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Listen" EntityType="BabyDBModel.Store.Listen" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ListenType" EntityType="BabyDBModel.Store.ListenType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Merchant" EntityType="BabyDBModel.Store.Merchant" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MerchantFeedback" EntityType="BabyDBModel.Store.MerchantFeedback" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="News_content" EntityType="BabyDBModel.Store.News_content" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="News_picture" EntityType="BabyDBModel.Store.News_picture" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Orderlist" EntityType="BabyDBModel.Store.Orderlist" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Problem" EntityType="BabyDBModel.Store.Problem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sensitivewords" EntityType="BabyDBModel.Store.Sensitivewords" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ShoppingCart" EntityType="BabyDBModel.Store.ShoppingCart" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="specificationType" EntityType="BabyDBModel.Store.specificationType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="spTypeDetails" EntityType="BabyDBModel.Store.spTypeDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserAddress" EntityType="BabyDBModel.Store.UserAddress" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserFeedback" EntityType="BabyDBModel.Store.UserFeedback" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserInfo" EntityType="BabyDBModel.Store.UserInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Userintegral" EntityType="BabyDBModel.Store.Userintegral" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Order" EntityType="BabyDBModel.Store.Order" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AdministratorsADintegral" Association="BabyDBModel.Store.FK_AdministratorsADintegral">
+      <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+      <End Role="ADintegral" EntitySet="ADintegral" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdministratorsAnnouncementform" Association="BabyDBModel.Store.FK_AdministratorsAnnouncementform">
+      <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+      <End Role="Announcementform" EntitySet="Announcementform" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdministratorsKnowledgeType" Association="BabyDBModel.Store.FK_AdministratorsKnowledgeType">
+      <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+      <End Role="knowledgeType" EntitySet="knowledgeType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdministratorsListenType" Association="BabyDBModel.Store.FK_AdministratorsListenType">
+      <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+      <End Role="ListenType" EntitySet="ListenType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdministratorsMerchant" Association="BabyDBModel.Store.FK_AdministratorsMerchant">
+      <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+      <End Role="Merchant" EntitySet="Merchant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdministratorsNews_content" Association="BabyDBModel.Store.FK_AdministratorsNews_content">
+      <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+      <End Role="News_content" EntitySet="News_content" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BabyInfoAlbum" Association="BabyDBModel.Store.FK_BabyInfoAlbum">
+      <End Role="BabyInfo" EntitySet="BabyInfo" />
+      <End Role="Album" EntitySet="Album" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BabyInfoGrowthrecord" Association="BabyDBModel.Store.FK_BabyInfoGrowthrecord">
+      <End Role="BabyInfo" EntitySet="BabyInfo" />
+      <End Role="Growthrecord" EntitySet="Growthrecord" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoBabyInfo" Association="BabyDBModel.Store.FK_UserInfoBabyInfo">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="BabyInfo" EntitySet="BabyInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommoditylistBrand" Association="BabyDBModel.Store.FK_CommoditylistBrand">
+      <End Role="Commoditylist" EntitySet="Commoditylist" />
+      <End Role="Brand" EntitySet="Brand" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MerchantChat" Association="BabyDBModel.Store.FK_MerchantChat">
+      <End Role="Merchant" EntitySet="Merchant" />
+      <End Role="chat" EntitySet="chat" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoChat" Association="BabyDBModel.Store.FK_UserInfoChat">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="chat" EntitySet="chat" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommoditylistCollection" Association="BabyDBModel.Store.FK_CommoditylistCollection">
+      <End Role="Commoditylist" EntitySet="Commoditylist" />
+      <End Role="Collection" EntitySet="Collection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoCollection" Association="BabyDBModel.Store.FK_UserInfoCollection">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="Collection" EntitySet="Collection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MerchantCommodityconcern" Association="BabyDBModel.Store.FK_MerchantCommodityconcern">
+      <End Role="Merchant" EntitySet="Merchant" />
+      <End Role="Commodityconcern" EntitySet="Commodityconcern" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoCommodityconcern" Association="BabyDBModel.Store.FK_UserInfoCommodityconcern">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="Commodityconcern" EntitySet="Commodityconcern" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommoditylistCommoditypicture" Association="BabyDBModel.Store.FK_CommoditylistCommoditypicture">
+      <End Role="Commoditylist" EntitySet="Commoditylist" />
+      <End Role="Commoditypicture" EntitySet="Commoditypicture" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommoditylistFootprint" Association="BabyDBModel.Store.FK_CommoditylistFootprint">
+      <End Role="Commoditylist" EntitySet="Commoditylist" />
+      <End Role="Footprint" EntitySet="Footprint" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommoditylistShoppingCart" Association="BabyDBModel.Store.FK_CommoditylistShoppingCart">
+      <End Role="Commoditylist" EntitySet="Commoditylist" />
+      <End Role="ShoppingCart" EntitySet="ShoppingCart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommoditylistUserFeedback" Association="BabyDBModel.Store.FK_CommoditylistUserFeedback">
+      <End Role="Commoditylist" EntitySet="Commoditylist" />
+      <End Role="UserFeedback" EntitySet="UserFeedback" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommodityTypeCommoditylist" Association="BabyDBModel.Store.FK_CommodityTypeCommoditylist">
+      <End Role="CommodityType" EntitySet="CommodityType" />
+      <End Role="Commoditylist" EntitySet="Commoditylist" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orderlist_Commoditylist" Association="BabyDBModel.Store.FK_Orderlist_Commoditylist">
+      <End Role="Commoditylist" EntitySet="Commoditylist" />
+      <End Role="Orderlist" EntitySet="Orderlist" />
+    </AssociationSet>
+    <AssociationSet Name="FK_spTypeDetails_Commoditylist" Association="BabyDBModel.Store.FK_spTypeDetails_Commoditylist">
+      <End Role="Commoditylist" EntitySet="Commoditylist" />
+      <End Role="spTypeDetails" EntitySet="spTypeDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderlistEvaluation" Association="BabyDBModel.Store.FK_OrderlistEvaluation">
+      <End Role="Orderlist" EntitySet="Orderlist" />
+      <End Role="Evaluation" EntitySet="Evaluation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoFootprint" Association="BabyDBModel.Store.FK_UserInfoFootprint">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="Footprint" EntitySet="Footprint" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KnowledgeTypeKnowledge" Association="BabyDBModel.Store.FK_KnowledgeTypeKnowledge">
+      <End Role="knowledgeType" EntitySet="knowledgeType" />
+      <End Role="KnowledgeSet" EntitySet="KnowledgeSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ListenTypeListen" Association="BabyDBModel.Store.FK_ListenTypeListen">
+      <End Role="ListenType" EntitySet="ListenType" />
+      <End Role="Listen" EntitySet="Listen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MerchantMerchantFeedback" Association="BabyDBModel.Store.FK_MerchantMerchantFeedback">
+      <End Role="Merchant" EntitySet="Merchant" />
+      <End Role="MerchantFeedback" EntitySet="MerchantFeedback" />
+    </AssociationSet>
+    <AssociationSet Name="FK_News_contentNews_picture" Association="BabyDBModel.Store.FK_News_contentNews_picture">
+      <End Role="News_content" EntitySet="News_content" />
+      <End Role="News_picture" EntitySet="News_picture" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoProblem" Association="BabyDBModel.Store.FK_UserInfoProblem">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="Problem" EntitySet="Problem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoShoppingCart" Association="BabyDBModel.Store.FK_UserInfoShoppingCart">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="ShoppingCart" EntitySet="ShoppingCart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommoditylistspTypeDetails" Association="BabyDBModel.Store.FK_CommoditylistspTypeDetails">
+      <End Role="specificationType" EntitySet="specificationType" />
+      <End Role="spTypeDetails" EntitySet="spTypeDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserAddressOrder" Association="BabyDBModel.Store.FK_UserAddressOrder">
+      <End Role="UserAddress" EntitySet="UserAddress" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoUserAddress" Association="BabyDBModel.Store.FK_UserInfoUserAddress">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="UserAddress" EntitySet="UserAddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoUserFeedback" Association="BabyDBModel.Store.FK_UserInfoUserFeedback">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="UserFeedback" EntitySet="UserFeedback" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoOrder" Association="BabyDBModel.Store.FK_UserInfoOrder">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoUserintegral" Association="BabyDBModel.Store.FK_UserInfoUserintegral">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="Userintegral" EntitySet="Userintegral" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ADintegral">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Aintegral" Type="float" Nullable="true" />
+    <Property Name="Acontent" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Acreatetime" Type="datetime" Nullable="false" />
+    <Property Name="AIsdelete" Type="bit" Nullable="false" />
+    <Property Name="AdministratorsID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdministratorsSet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="Sex" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Acreatetime" Type="datetime" Nullable="false" />
+    <Property Name="AIsdelete" Type="bit" Nullable="false" />
+    <Property Name="Pwd" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Headimg" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Album">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Acontent" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Aurl" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Atime" Type="datetime" Nullable="false" />
+    <Property Name="Arange" Type="bit" Nullable="false" />
+    <Property Name="Aadress" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="AIsdelete" Type="bit" Nullable="false" />
+    <Property Name="BabyInfoID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Announcementform">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Atitle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Acontent" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Acreatetime" Type="datetime" Nullable="false" />
+    <Property Name="AIsdelete" Type="bit" Nullable="false" />
+    <Property Name="AdministratorsID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BabyInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Bname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BLittle" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="BSex" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="BBirthday" Type="datetime" Nullable="true" />
+    <Property Name="BQRcode" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="BHeadimg" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Bconstellation" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BBirthtime" Type="datetime" Nullable="true" />
+    <Property Name="Bheight" Type="float" Nullable="true" />
+    <Property Name="BWidth" Type="float" Nullable="true" />
+    <Property Name="BHeadcircumference" Type="float" Nullable="true" />
+    <Property Name="Bcreatetime" Type="datetime" Nullable="false" />
+    <Property Name="BIsdelete" Type="bit" Nullable="false" />
+    <Property Name="UserInfoID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Brand">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BrandTitle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="CommoditylistID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="chat">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ccontent" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="CpictureUrl" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Ctime" Type="datetime" Nullable="true" />
+    <Property Name="Cvideo" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="MerchantID" Type="int" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="UserInfoID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Collection">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ccreatetime" Type="datetime" Nullable="false" />
+    <Property Name="CIsdelete" Type="bit" Nullable="false" />
+    <Property Name="UserInfoID" Type="int" Nullable="false" />
+    <Property Name="CommoditylistID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Commodityconcern">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ccreatetime" Type="datetime" Nullable="false" />
+    <Property Name="CIsdelete" Type="bit" Nullable="false" />
+    <Property Name="MerchantID" Type="int" Nullable="false" />
+    <Property Name="UserInfoID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Commoditylist">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tradename" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductBrief" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Displaylevel" Type="int" Nullable="false" />
+    <Property Name="Originalprice" Type="float" Nullable="true" />
+    <Property Name="Currentprice" Type="float" Nullable="false" />
+    <Property Name="Number" Type="int" Nullable="false" />
+    <Property Name="Courierfee" Type="float" Nullable="true" />
+    <Property Name="Discount" Type="float" Nullable="true" />
+    <Property Name="state" Type="smallint" Nullable="false" />
+    <Property Name="Ccreatetime" Type="datetime" Nullable="false" />
+    <Property Name="CIsdelete" Type="bit" Nullable="false" />
+    <Property Name="CommodityTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Commoditypicture">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PicContend" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="pictureUrl" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="CommoditylistID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CommodityType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ctitle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TypeID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Ccreatetime" Type="datetime" Nullable="false" />
+    <Property Name="CIsdelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Evaluation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Econtent" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Eimgurl" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="EPraise" Type="int" Nullable="true" />
+    <Property Name="EtypeID" Type="int" Nullable="false" />
+    <Property Name="Ecreatetime" Type="datetime" Nullable="false" />
+    <Property Name="EIsdelete" Type="bit" Nullable="false" />
+    <Property Name="OrderlistID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Footprint">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fcreatetime" Type="datetime" Nullable="false" />
+    <Property Name="FIsdelete" Type="bit" Nullable="false" />
+    <Property Name="CommoditylistID" Type="int" Nullable="false" />
+    <Property Name="UserInfoID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Growthrecord">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Gheight" Type="float" Nullable="false" />
+    <Property Name="Gwidth" Type="float" Nullable="false" />
+    <Property Name="GHeadcircumference" Type="float" Nullable="false" />
+    <Property Name="Gweight" Type="float" Nullable="false" />
+    <Property Name="Gcreatetime" Type="datetime" Nullable="false" />
+    <Property Name="GIsdelete" Type="bit" Nullable="false" />
+    <Property Name="BabyInfoID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KnowledgeSet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Subheading" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Imgurl" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Click" Type="int" Nullable="false" />
+    <Property Name="Browsevolume" Type="int" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="KnowledgeTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="knowledgeType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="AdministratorsID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Listen">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ListenName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MusicUrl" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Click" Type="int" Nullable="true" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="ListenTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ListenType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="AdministratorsID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Merchant">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mheadimg" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mrealname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MPwd" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MSex" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MAge" Type="int" Nullable="false" />
+    <Property Name="Maddress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mlevel" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mphone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MIDnum" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mbusiness" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MShopphotos" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MEmail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mdescribe" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mcreatetime" Type="datetime" Nullable="false" />
+    <Property Name="MIsdelete" Type="int" Nullable="false" />
+    <Property Name="AdministratorsID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MerchantFeedback">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fcontent" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Fimgurl" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Finformation" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="MerchantID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="News_content">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Picture" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Already" Type="bit" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="AdministratorsID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="News_picture">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NewDescribe" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="NewpictureUrl" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="NewscontentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orderlist">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="UnitPrice" Type="float" Nullable="false" />
+    <Property Name="state" Type="int" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="Order_OrderId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CommoditylistID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Problem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Questions" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Usertime" Type="datetime" Nullable="false" />
+    <Property Name="answers" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="time" Type="datetime" Nullable="false" />
+    <Property Name="state" Type="int" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="UserInfoID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sensitivewords">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SProhibit" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Sreplace" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Screatetime" Type="datetime" Nullable="false" />
+    <Property Name="SIsdelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ShoppingCart">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="State" Type="int" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="UserInfoID" Type="int" Nullable="false" />
+    <Property Name="CommoditylistID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="specificationType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Details" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spTypeDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="specificationTypeID" Type="int" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="CommoditylistID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserAddress">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Default" Type="bit" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="UserInfoID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserFeedback">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fcontent" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Fimgurl" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Finformation" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Fcreatetime" Type="datetime" Nullable="false" />
+    <Property Name="FIsdelete" Type="bit" Nullable="false" />
+    <Property Name="UserInfoID" Type="int" Nullable="false" />
+    <Property Name="CommoditylistID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UOpenid" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UNickname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UPhone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UPwd" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UHeadimg" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UAge" Type="int" Nullable="true" />
+    <Property Name="USex" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="UBirthday" Type="datetime" Nullable="true" />
+    <Property Name="Uarea" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="USignature" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="URealname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Ulevel" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Uidentification" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UEmail" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="UCreatetime" Type="datetime" Nullable="false" />
+    <Property Name="UIsdelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Userintegral">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Uintegral" Type="float" Nullable="false" />
+    <Property Name="CountMoney" Type="float" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" Nullable="false" />
+    <Property Name="Isdelete" Type="bit" Nullable="false" />
+    <Property Name="UserInfoID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+      <PropertyRef Name="OPriceTotal" />
+      <PropertyRef Name="Onum" />
+      <PropertyRef Name="Ocreatetime" />
+      <PropertyRef Name="OIsdelete" />
+      <PropertyRef Name="UserInfoID" />
+      <PropertyRef Name="UserAddressID" />
+    </Key>
+    <Property Name="OrderId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OPriceTotal" Type="float" Nullable="false" />
+    <Property Name="Onum" Type="int" Nullable="false" />
+    <Property Name="Ocreatetime" Type="datetime" Nullable="false" />
+    <Property Name="OIsdelete" Type="bit" Nullable="false" />
+    <Property Name="UserInfoID" Type="int" Nullable="false" />
+    <Property Name="UserAddressID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AdministratorsADintegral">
+    <End Role="AdministratorsSet" Type="BabyDBModel.Store.AdministratorsSet" Multiplicity="1" />
+    <End Role="ADintegral" Type="BabyDBModel.Store.ADintegral" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdministratorsSet">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ADintegral">
+        <PropertyRef Name="AdministratorsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdministratorsAnnouncementform">
+    <End Role="AdministratorsSet" Type="BabyDBModel.Store.AdministratorsSet" Multiplicity="1" />
+    <End Role="Announcementform" Type="BabyDBModel.Store.Announcementform" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdministratorsSet">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Announcementform">
+        <PropertyRef Name="AdministratorsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdministratorsKnowledgeType">
+    <End Role="AdministratorsSet" Type="BabyDBModel.Store.AdministratorsSet" Multiplicity="1" />
+    <End Role="knowledgeType" Type="BabyDBModel.Store.knowledgeType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdministratorsSet">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="knowledgeType">
+        <PropertyRef Name="AdministratorsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdministratorsListenType">
+    <End Role="AdministratorsSet" Type="BabyDBModel.Store.AdministratorsSet" Multiplicity="1" />
+    <End Role="ListenType" Type="BabyDBModel.Store.ListenType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdministratorsSet">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ListenType">
+        <PropertyRef Name="AdministratorsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdministratorsMerchant">
+    <End Role="AdministratorsSet" Type="BabyDBModel.Store.AdministratorsSet" Multiplicity="1" />
+    <End Role="Merchant" Type="BabyDBModel.Store.Merchant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdministratorsSet">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Merchant">
+        <PropertyRef Name="AdministratorsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdministratorsNews_content">
+    <End Role="AdministratorsSet" Type="BabyDBModel.Store.AdministratorsSet" Multiplicity="1" />
+    <End Role="News_content" Type="BabyDBModel.Store.News_content" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdministratorsSet">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="News_content">
+        <PropertyRef Name="AdministratorsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BabyInfoAlbum">
+    <End Role="BabyInfo" Type="BabyDBModel.Store.BabyInfo" Multiplicity="1" />
+    <End Role="Album" Type="BabyDBModel.Store.Album" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BabyInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Album">
+        <PropertyRef Name="BabyInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BabyInfoGrowthrecord">
+    <End Role="BabyInfo" Type="BabyDBModel.Store.BabyInfo" Multiplicity="1" />
+    <End Role="Growthrecord" Type="BabyDBModel.Store.Growthrecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BabyInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Growthrecord">
+        <PropertyRef Name="BabyInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoBabyInfo">
+    <End Role="UserInfo" Type="BabyDBModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="BabyInfo" Type="BabyDBModel.Store.BabyInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BabyInfo">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommoditylistBrand">
+    <End Role="Commoditylist" Type="BabyDBModel.Store.Commoditylist" Multiplicity="1" />
+    <End Role="Brand" Type="BabyDBModel.Store.Brand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commoditylist">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Brand">
+        <PropertyRef Name="CommoditylistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MerchantChat">
+    <End Role="Merchant" Type="BabyDBModel.Store.Merchant" Multiplicity="1" />
+    <End Role="chat" Type="BabyDBModel.Store.chat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Merchant">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="chat">
+        <PropertyRef Name="MerchantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoChat">
+    <End Role="UserInfo" Type="BabyDBModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="chat" Type="BabyDBModel.Store.chat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="chat">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommoditylistCollection">
+    <End Role="Commoditylist" Type="BabyDBModel.Store.Commoditylist" Multiplicity="1" />
+    <End Role="Collection" Type="BabyDBModel.Store.Collection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commoditylist">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Collection">
+        <PropertyRef Name="CommoditylistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoCollection">
+    <End Role="UserInfo" Type="BabyDBModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="Collection" Type="BabyDBModel.Store.Collection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Collection">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MerchantCommodityconcern">
+    <End Role="Merchant" Type="BabyDBModel.Store.Merchant" Multiplicity="1" />
+    <End Role="Commodityconcern" Type="BabyDBModel.Store.Commodityconcern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Merchant">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Commodityconcern">
+        <PropertyRef Name="MerchantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoCommodityconcern">
+    <End Role="UserInfo" Type="BabyDBModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="Commodityconcern" Type="BabyDBModel.Store.Commodityconcern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Commodityconcern">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommoditylistCommoditypicture">
+    <End Role="Commoditylist" Type="BabyDBModel.Store.Commoditylist" Multiplicity="1" />
+    <End Role="Commoditypicture" Type="BabyDBModel.Store.Commoditypicture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commoditylist">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Commoditypicture">
+        <PropertyRef Name="CommoditylistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommoditylistFootprint">
+    <End Role="Commoditylist" Type="BabyDBModel.Store.Commoditylist" Multiplicity="1" />
+    <End Role="Footprint" Type="BabyDBModel.Store.Footprint" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commoditylist">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Footprint">
+        <PropertyRef Name="CommoditylistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommoditylistShoppingCart">
+    <End Role="Commoditylist" Type="BabyDBModel.Store.Commoditylist" Multiplicity="1" />
+    <End Role="ShoppingCart" Type="BabyDBModel.Store.ShoppingCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commoditylist">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ShoppingCart">
+        <PropertyRef Name="CommoditylistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommoditylistUserFeedback">
+    <End Role="Commoditylist" Type="BabyDBModel.Store.Commoditylist" Multiplicity="1" />
+    <End Role="UserFeedback" Type="BabyDBModel.Store.UserFeedback" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commoditylist">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserFeedback">
+        <PropertyRef Name="CommoditylistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommodityTypeCommoditylist">
+    <End Role="CommodityType" Type="BabyDBModel.Store.CommodityType" Multiplicity="1" />
+    <End Role="Commoditylist" Type="BabyDBModel.Store.Commoditylist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CommodityType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Commoditylist">
+        <PropertyRef Name="CommodityTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orderlist_Commoditylist">
+    <End Role="Commoditylist" Type="BabyDBModel.Store.Commoditylist" Multiplicity="1" />
+    <End Role="Orderlist" Type="BabyDBModel.Store.Orderlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commoditylist">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Orderlist">
+        <PropertyRef Name="CommoditylistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_spTypeDetails_Commoditylist">
+    <End Role="Commoditylist" Type="BabyDBModel.Store.Commoditylist" Multiplicity="1" />
+    <End Role="spTypeDetails" Type="BabyDBModel.Store.spTypeDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commoditylist">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="spTypeDetails">
+        <PropertyRef Name="CommoditylistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderlistEvaluation">
+    <End Role="Orderlist" Type="BabyDBModel.Store.Orderlist" Multiplicity="1" />
+    <End Role="Evaluation" Type="BabyDBModel.Store.Evaluation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orderlist">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Evaluation">
+        <PropertyRef Name="OrderlistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoFootprint">
+    <End Role="UserInfo" Type="BabyDBModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="Footprint" Type="BabyDBModel.Store.Footprint" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Footprint">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KnowledgeTypeKnowledge">
+    <End Role="knowledgeType" Type="BabyDBModel.Store.knowledgeType" Multiplicity="1" />
+    <End Role="KnowledgeSet" Type="BabyDBModel.Store.KnowledgeSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="knowledgeType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="KnowledgeSet">
+        <PropertyRef Name="KnowledgeTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ListenTypeListen">
+    <End Role="ListenType" Type="BabyDBModel.Store.ListenType" Multiplicity="1" />
+    <End Role="Listen" Type="BabyDBModel.Store.Listen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListenType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Listen">
+        <PropertyRef Name="ListenTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MerchantMerchantFeedback">
+    <End Role="Merchant" Type="BabyDBModel.Store.Merchant" Multiplicity="1" />
+    <End Role="MerchantFeedback" Type="BabyDBModel.Store.MerchantFeedback" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Merchant">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MerchantFeedback">
+        <PropertyRef Name="MerchantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_News_contentNews_picture">
+    <End Role="News_content" Type="BabyDBModel.Store.News_content" Multiplicity="1" />
+    <End Role="News_picture" Type="BabyDBModel.Store.News_picture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News_content">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="News_picture">
+        <PropertyRef Name="NewscontentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoProblem">
+    <End Role="UserInfo" Type="BabyDBModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="Problem" Type="BabyDBModel.Store.Problem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Problem">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoShoppingCart">
+    <End Role="UserInfo" Type="BabyDBModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="ShoppingCart" Type="BabyDBModel.Store.ShoppingCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ShoppingCart">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommoditylistspTypeDetails">
+    <End Role="specificationType" Type="BabyDBModel.Store.specificationType" Multiplicity="1" />
+    <End Role="spTypeDetails" Type="BabyDBModel.Store.spTypeDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="specificationType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="spTypeDetails">
+        <PropertyRef Name="specificationTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserAddressOrder">
+    <End Role="UserAddress" Type="BabyDBModel.Store.UserAddress" Multiplicity="1" />
+    <End Role="Order" Type="BabyDBModel.Store.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserAddress">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="UserAddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoUserAddress">
+    <End Role="UserInfo" Type="BabyDBModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="UserAddress" Type="BabyDBModel.Store.UserAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserAddress">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoUserFeedback">
+    <End Role="UserInfo" Type="BabyDBModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="UserFeedback" Type="BabyDBModel.Store.UserFeedback" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserFeedback">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoOrder">
+    <End Role="UserInfo" Type="BabyDBModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="Order" Type="BabyDBModel.Store.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoUserintegral">
+    <End Role="UserInfo" Type="BabyDBModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="Userintegral" Type="BabyDBModel.Store.Userintegral" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Userintegral">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BabyDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ADintegral">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Aintegral" Type="Double" />
+          <Property Name="Acontent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Acreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="AIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="AdministratorsID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AdministratorsSet" Relationship="Self.FK_AdministratorsADintegral" FromRole="ADintegral" ToRole="AdministratorsSet" />
+        </EntityType>
+        <EntityType Name="AdministratorsSet">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="Sex" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Acreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="AIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="Pwd" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Headimg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ADintegral" Relationship="Self.FK_AdministratorsADintegral" FromRole="AdministratorsSet" ToRole="ADintegral" />
+          <NavigationProperty Name="Announcementform" Relationship="Self.FK_AdministratorsAnnouncementform" FromRole="AdministratorsSet" ToRole="Announcementform" />
+          <NavigationProperty Name="knowledgeType" Relationship="Self.FK_AdministratorsKnowledgeType" FromRole="AdministratorsSet" ToRole="knowledgeType" />
+          <NavigationProperty Name="ListenType" Relationship="Self.FK_AdministratorsListenType" FromRole="AdministratorsSet" ToRole="ListenType" />
+          <NavigationProperty Name="Merchant" Relationship="Self.FK_AdministratorsMerchant" FromRole="AdministratorsSet" ToRole="Merchant" />
+          <NavigationProperty Name="News_content" Relationship="Self.FK_AdministratorsNews_content" FromRole="AdministratorsSet" ToRole="News_content" />
+        </EntityType>
+        <EntityType Name="Album">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Acontent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Aurl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Atime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Arange" Type="Boolean" Nullable="false" />
+          <Property Name="Aadress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="BabyInfoID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BabyInfo" Relationship="Self.FK_BabyInfoAlbum" FromRole="Album" ToRole="BabyInfo" />
+        </EntityType>
+        <EntityType Name="Announcementform">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Atitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Acontent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Acreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="AIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="AdministratorsID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AdministratorsSet" Relationship="Self.FK_AdministratorsAnnouncementform" FromRole="Announcementform" ToRole="AdministratorsSet" />
+        </EntityType>
+        <EntityType Name="BabyInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Bname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BLittle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BSex" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BBirthday" Type="DateTime" Precision="3" />
+          <Property Name="BQRcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BHeadimg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Bconstellation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BBirthtime" Type="DateTime" Precision="3" />
+          <Property Name="Bheight" Type="Double" />
+          <Property Name="BWidth" Type="Double" />
+          <Property Name="BHeadcircumference" Type="Double" />
+          <Property Name="Bcreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="BIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="UserInfoID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Album" Relationship="Self.FK_BabyInfoAlbum" FromRole="BabyInfo" ToRole="Album" />
+          <NavigationProperty Name="Growthrecord" Relationship="Self.FK_BabyInfoGrowthrecord" FromRole="BabyInfo" ToRole="Growthrecord" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserInfoBabyInfo" FromRole="BabyInfo" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="Brand">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BrandTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="CommoditylistID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Commoditylist" Relationship="Self.FK_CommoditylistBrand" FromRole="Brand" ToRole="Commoditylist" />
+        </EntityType>
+        <EntityType Name="chat">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ccontent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CpictureUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ctime" Type="DateTime" Precision="3" />
+          <Property Name="Cvideo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MerchantID" Type="Int32" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="UserInfoID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Merchant" Relationship="Self.FK_MerchantChat" FromRole="chat" ToRole="Merchant" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserInfoChat" FromRole="chat" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="Collection">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ccreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="UserInfoID" Type="Int32" Nullable="false" />
+          <Property Name="CommoditylistID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Commoditylist" Relationship="Self.FK_CommoditylistCollection" FromRole="Collection" ToRole="Commoditylist" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserInfoCollection" FromRole="Collection" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="Commodityconcern">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ccreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="MerchantID" Type="Int32" Nullable="false" />
+          <Property Name="UserInfoID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Merchant" Relationship="Self.FK_MerchantCommodityconcern" FromRole="Commodityconcern" ToRole="Merchant" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserInfoCommodityconcern" FromRole="Commodityconcern" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="Commoditylist">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tradename" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProductBrief" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Displaylevel" Type="Int32" Nullable="false" />
+          <Property Name="Originalprice" Type="Double" />
+          <Property Name="Currentprice" Type="Double" Nullable="false" />
+          <Property Name="Number" Type="Int32" Nullable="false" />
+          <Property Name="Courierfee" Type="Double" />
+          <Property Name="Discount" Type="Double" />
+          <Property Name="state" Type="Int16" Nullable="false" />
+          <Property Name="Ccreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="CommodityTypeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Brand" Relationship="Self.FK_CommoditylistBrand" FromRole="Commoditylist" ToRole="Brand" />
+          <NavigationProperty Name="Collection" Relationship="Self.FK_CommoditylistCollection" FromRole="Commoditylist" ToRole="Collection" />
+          <NavigationProperty Name="Commoditypicture" Relationship="Self.FK_CommoditylistCommoditypicture" FromRole="Commoditylist" ToRole="Commoditypicture" />
+          <NavigationProperty Name="Footprint" Relationship="Self.FK_CommoditylistFootprint" FromRole="Commoditylist" ToRole="Footprint" />
+          <NavigationProperty Name="ShoppingCart" Relationship="Self.FK_CommoditylistShoppingCart" FromRole="Commoditylist" ToRole="ShoppingCart" />
+          <NavigationProperty Name="UserFeedback" Relationship="Self.FK_CommoditylistUserFeedback" FromRole="Commoditylist" ToRole="UserFeedback" />
+          <NavigationProperty Name="CommodityType" Relationship="Self.FK_CommodityTypeCommoditylist" FromRole="Commoditylist" ToRole="CommodityType" />
+          <NavigationProperty Name="Orderlist" Relationship="Self.FK_Orderlist_Commoditylist" FromRole="Commoditylist" ToRole="Orderlist" />
+          <NavigationProperty Name="spTypeDetails" Relationship="Self.FK_spTypeDetails_Commoditylist" FromRole="Commoditylist" ToRole="spTypeDetails" />
+        </EntityType>
+        <EntityType Name="Commoditypicture">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PicContend" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="pictureUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="CommoditylistID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Commoditylist" Relationship="Self.FK_CommoditylistCommoditypicture" FromRole="Commoditypicture" ToRole="Commoditylist" />
+        </EntityType>
+        <EntityType Name="CommodityType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ctitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TypeID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Ccreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CIsdelete" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Commoditylist" Relationship="Self.FK_CommodityTypeCommoditylist" FromRole="CommodityType" ToRole="Commoditylist" />
+        </EntityType>
+        <EntityType Name="Evaluation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Econtent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Eimgurl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EPraise" Type="Int32" />
+          <Property Name="EtypeID" Type="Int32" Nullable="false" />
+          <Property Name="Ecreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="OrderlistID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Orderlist" Relationship="Self.FK_OrderlistEvaluation" FromRole="Evaluation" ToRole="Orderlist" />
+        </EntityType>
+        <EntityType Name="Footprint">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fcreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="CommoditylistID" Type="Int32" Nullable="false" />
+          <Property Name="UserInfoID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Commoditylist" Relationship="Self.FK_CommoditylistFootprint" FromRole="Footprint" ToRole="Commoditylist" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserInfoFootprint" FromRole="Footprint" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="Growthrecord">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Gheight" Type="Double" Nullable="false" />
+          <Property Name="Gwidth" Type="Double" Nullable="false" />
+          <Property Name="GHeadcircumference" Type="Double" Nullable="false" />
+          <Property Name="Gweight" Type="Double" Nullable="false" />
+          <Property Name="Gcreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="GIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="BabyInfoID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BabyInfo" Relationship="Self.FK_BabyInfoGrowthrecord" FromRole="Growthrecord" ToRole="BabyInfo" />
+        </EntityType>
+        <EntityType Name="KnowledgeSet">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Subheading" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Imgurl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Click" Type="Int32" Nullable="false" />
+          <Property Name="Browsevolume" Type="Int32" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="KnowledgeTypeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="knowledgeType" Relationship="Self.FK_KnowledgeTypeKnowledge" FromRole="KnowledgeSet" ToRole="knowledgeType" />
+        </EntityType>
+        <EntityType Name="knowledgeType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="AdministratorsID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AdministratorsSet" Relationship="Self.FK_AdministratorsKnowledgeType" FromRole="knowledgeType" ToRole="AdministratorsSet" />
+          <NavigationProperty Name="KnowledgeSet" Relationship="Self.FK_KnowledgeTypeKnowledge" FromRole="knowledgeType" ToRole="KnowledgeSet" />
+        </EntityType>
+        <EntityType Name="Listen">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ListenName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MusicUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Click" Type="Int32" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="ListenTypeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ListenType" Relationship="Self.FK_ListenTypeListen" FromRole="Listen" ToRole="ListenType" />
+        </EntityType>
+        <EntityType Name="ListenType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="AdministratorsID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AdministratorsSet" Relationship="Self.FK_AdministratorsListenType" FromRole="ListenType" ToRole="AdministratorsSet" />
+          <NavigationProperty Name="Listen" Relationship="Self.FK_ListenTypeListen" FromRole="ListenType" ToRole="Listen" />
+        </EntityType>
+        <EntityType Name="Merchant">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Mname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mheadimg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mrealname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MPwd" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MSex" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MAge" Type="Int32" Nullable="false" />
+          <Property Name="Maddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mlevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mphone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MIDnum" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mbusiness" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MShopphotos" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mdescribe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mcreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="MIsdelete" Type="Int32" Nullable="false" />
+          <Property Name="AdministratorsID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AdministratorsSet" Relationship="Self.FK_AdministratorsMerchant" FromRole="Merchant" ToRole="AdministratorsSet" />
+          <NavigationProperty Name="chat" Relationship="Self.FK_MerchantChat" FromRole="Merchant" ToRole="chat" />
+          <NavigationProperty Name="Commodityconcern" Relationship="Self.FK_MerchantCommodityconcern" FromRole="Merchant" ToRole="Commodityconcern" />
+          <NavigationProperty Name="MerchantFeedback" Relationship="Self.FK_MerchantMerchantFeedback" FromRole="Merchant" ToRole="MerchantFeedback" />
+        </EntityType>
+        <EntityType Name="MerchantFeedback">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fcontent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Fimgurl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Finformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="MerchantID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Merchant" Relationship="Self.FK_MerchantMerchantFeedback" FromRole="MerchantFeedback" ToRole="Merchant" />
+        </EntityType>
+        <EntityType Name="News_content">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Picture" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Already" Type="Boolean" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="AdministratorsID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AdministratorsSet" Relationship="Self.FK_AdministratorsNews_content" FromRole="News_content" ToRole="AdministratorsSet" />
+          <NavigationProperty Name="News_picture" Relationship="Self.FK_News_contentNews_picture" FromRole="News_content" ToRole="News_picture" />
+        </EntityType>
+        <EntityType Name="News_picture">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NewDescribe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NewpictureUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="NewscontentID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="News_content" Relationship="Self.FK_News_contentNews_picture" FromRole="News_picture" ToRole="News_content" />
+        </EntityType>
+        <EntityType Name="Orderlist">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="UnitPrice" Type="Double" Nullable="false" />
+          <Property Name="state" Type="Int32" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="Order_OrderId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CommoditylistID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Commoditylist" Relationship="Self.FK_Orderlist_Commoditylist" FromRole="Orderlist" ToRole="Commoditylist" />
+          <NavigationProperty Name="Evaluation" Relationship="Self.FK_OrderlistEvaluation" FromRole="Orderlist" ToRole="Evaluation" />
+        </EntityType>
+        <EntityType Name="Problem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Questions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Usertime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="answers" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="time" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="state" Type="Int32" Nullable="false" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="UserInfoID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserInfoProblem" FromRole="Problem" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="Sensitivewords">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SProhibit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Sreplace" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Screatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SIsdelete" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShoppingCart">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="State" Type="Int32" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="UserInfoID" Type="Int32" Nullable="false" />
+          <Property Name="CommoditylistID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Commoditylist" Relationship="Self.FK_CommoditylistShoppingCart" FromRole="ShoppingCart" ToRole="Commoditylist" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserInfoShoppingCart" FromRole="ShoppingCart" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="specificationType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="spTypeDetails" Relationship="Self.FK_CommoditylistspTypeDetails" FromRole="specificationType" ToRole="spTypeDetails" />
+        </EntityType>
+        <EntityType Name="spTypeDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="specificationTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="CommoditylistID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Commoditylist" Relationship="Self.FK_spTypeDetails_Commoditylist" FromRole="spTypeDetails" ToRole="Commoditylist" />
+          <NavigationProperty Name="specificationType" Relationship="Self.FK_CommoditylistspTypeDetails" FromRole="spTypeDetails" ToRole="specificationType" />
+        </EntityType>
+        <EntityType Name="UserAddress">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Default" Type="Boolean" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="UserInfoID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Order" Relationship="Self.FK_UserAddressOrder" FromRole="UserAddress" ToRole="Order" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserInfoUserAddress" FromRole="UserAddress" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="UserFeedback">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fcontent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Fimgurl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Finformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Fcreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="UserInfoID" Type="Int32" Nullable="false" />
+          <Property Name="CommoditylistID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Commoditylist" Relationship="Self.FK_CommoditylistUserFeedback" FromRole="UserFeedback" ToRole="Commoditylist" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserInfoUserFeedback" FromRole="UserFeedback" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UOpenid" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UNickname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UPhone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UPwd" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UHeadimg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UAge" Type="Int32" />
+          <Property Name="USex" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UBirthday" Type="DateTime" Precision="3" />
+          <Property Name="Uarea" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="USignature" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="URealname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Ulevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Uidentification" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UCreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UIsdelete" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BabyInfo" Relationship="Self.FK_UserInfoBabyInfo" FromRole="UserInfo" ToRole="BabyInfo" />
+          <NavigationProperty Name="chat" Relationship="Self.FK_UserInfoChat" FromRole="UserInfo" ToRole="chat" />
+          <NavigationProperty Name="Collection" Relationship="Self.FK_UserInfoCollection" FromRole="UserInfo" ToRole="Collection" />
+          <NavigationProperty Name="Commodityconcern" Relationship="Self.FK_UserInfoCommodityconcern" FromRole="UserInfo" ToRole="Commodityconcern" />
+          <NavigationProperty Name="Footprint" Relationship="Self.FK_UserInfoFootprint" FromRole="UserInfo" ToRole="Footprint" />
+          <NavigationProperty Name="Problem" Relationship="Self.FK_UserInfoProblem" FromRole="UserInfo" ToRole="Problem" />
+          <NavigationProperty Name="ShoppingCart" Relationship="Self.FK_UserInfoShoppingCart" FromRole="UserInfo" ToRole="ShoppingCart" />
+          <NavigationProperty Name="UserAddress" Relationship="Self.FK_UserInfoUserAddress" FromRole="UserInfo" ToRole="UserAddress" />
+          <NavigationProperty Name="UserFeedback" Relationship="Self.FK_UserInfoUserFeedback" FromRole="UserInfo" ToRole="UserFeedback" />
+          <NavigationProperty Name="Order" Relationship="Self.FK_UserInfoOrder" FromRole="UserInfo" ToRole="Order" />
+          <NavigationProperty Name="Userintegral" Relationship="Self.FK_UserInfoUserintegral" FromRole="UserInfo" ToRole="Userintegral" />
+        </EntityType>
+        <EntityType Name="Userintegral">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uintegral" Type="Double" Nullable="false" />
+          <Property Name="CountMoney" Type="Double" Nullable="false" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Isdelete" Type="Boolean" Nullable="false" />
+          <Property Name="UserInfoID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserInfoUserintegral" FromRole="Userintegral" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderId" />
+            <PropertyRef Name="OPriceTotal" />
+            <PropertyRef Name="Onum" />
+            <PropertyRef Name="Ocreatetime" />
+            <PropertyRef Name="OIsdelete" />
+            <PropertyRef Name="UserInfoID" />
+            <PropertyRef Name="UserAddressID" />
+          </Key>
+          <Property Name="OrderId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OPriceTotal" Type="Double" Nullable="false" />
+          <Property Name="Onum" Type="Int32" Nullable="false" />
+          <Property Name="Ocreatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OIsdelete" Type="Boolean" Nullable="false" />
+          <Property Name="UserInfoID" Type="Int32" Nullable="false" />
+          <Property Name="UserAddressID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="UserAddress" Relationship="Self.FK_UserAddressOrder" FromRole="Order" ToRole="UserAddress" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserInfoOrder" FromRole="Order" ToRole="UserInfo" />
+        </EntityType>
+        <Association Name="FK_AdministratorsADintegral">
+          <End Role="AdministratorsSet" Type="Self.AdministratorsSet" Multiplicity="1" />
+          <End Role="ADintegral" Type="Self.ADintegral" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AdministratorsSet">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ADintegral">
+              <PropertyRef Name="AdministratorsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdministratorsAnnouncementform">
+          <End Role="AdministratorsSet" Type="Self.AdministratorsSet" Multiplicity="1" />
+          <End Role="Announcementform" Type="Self.Announcementform" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AdministratorsSet">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Announcementform">
+              <PropertyRef Name="AdministratorsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdministratorsKnowledgeType">
+          <End Role="AdministratorsSet" Type="Self.AdministratorsSet" Multiplicity="1" />
+          <End Role="knowledgeType" Type="Self.knowledgeType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AdministratorsSet">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="knowledgeType">
+              <PropertyRef Name="AdministratorsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdministratorsListenType">
+          <End Role="AdministratorsSet" Type="Self.AdministratorsSet" Multiplicity="1" />
+          <End Role="ListenType" Type="Self.ListenType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AdministratorsSet">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ListenType">
+              <PropertyRef Name="AdministratorsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdministratorsMerchant">
+          <End Role="AdministratorsSet" Type="Self.AdministratorsSet" Multiplicity="1" />
+          <End Role="Merchant" Type="Self.Merchant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AdministratorsSet">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Merchant">
+              <PropertyRef Name="AdministratorsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdministratorsNews_content">
+          <End Role="AdministratorsSet" Type="Self.AdministratorsSet" Multiplicity="1" />
+          <End Role="News_content" Type="Self.News_content" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AdministratorsSet">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="News_content">
+              <PropertyRef Name="AdministratorsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BabyInfoAlbum">
+          <End Role="BabyInfo" Type="Self.BabyInfo" Multiplicity="1" />
+          <End Role="Album" Type="Self.Album" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BabyInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Album">
+              <PropertyRef Name="BabyInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BabyInfoGrowthrecord">
+          <End Role="BabyInfo" Type="Self.BabyInfo" Multiplicity="1" />
+          <End Role="Growthrecord" Type="Self.Growthrecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BabyInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Growthrecord">
+              <PropertyRef Name="BabyInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoBabyInfo">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="BabyInfo" Type="Self.BabyInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BabyInfo">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommoditylistBrand">
+          <End Role="Commoditylist" Type="Self.Commoditylist" Multiplicity="1" />
+          <End Role="Brand" Type="Self.Brand" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Commoditylist">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Brand">
+              <PropertyRef Name="CommoditylistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MerchantChat">
+          <End Role="Merchant" Type="Self.Merchant" Multiplicity="1" />
+          <End Role="chat" Type="Self.chat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Merchant">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="chat">
+              <PropertyRef Name="MerchantID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoChat">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="chat" Type="Self.chat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="chat">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommoditylistCollection">
+          <End Role="Commoditylist" Type="Self.Commoditylist" Multiplicity="1" />
+          <End Role="Collection" Type="Self.Collection" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Commoditylist">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Collection">
+              <PropertyRef Name="CommoditylistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoCollection">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="Collection" Type="Self.Collection" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Collection">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MerchantCommodityconcern">
+          <End Role="Merchant" Type="Self.Merchant" Multiplicity="1" />
+          <End Role="Commodityconcern" Type="Self.Commodityconcern" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Merchant">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Commodityconcern">
+              <PropertyRef Name="MerchantID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoCommodityconcern">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="Commodityconcern" Type="Self.Commodityconcern" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Commodityconcern">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommoditylistCommoditypicture">
+          <End Role="Commoditylist" Type="Self.Commoditylist" Multiplicity="1" />
+          <End Role="Commoditypicture" Type="Self.Commoditypicture" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Commoditylist">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Commoditypicture">
+              <PropertyRef Name="CommoditylistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommoditylistFootprint">
+          <End Role="Commoditylist" Type="Self.Commoditylist" Multiplicity="1" />
+          <End Role="Footprint" Type="Self.Footprint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Commoditylist">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Footprint">
+              <PropertyRef Name="CommoditylistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommoditylistShoppingCart">
+          <End Role="Commoditylist" Type="Self.Commoditylist" Multiplicity="1" />
+          <End Role="ShoppingCart" Type="Self.ShoppingCart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Commoditylist">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ShoppingCart">
+              <PropertyRef Name="CommoditylistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommoditylistUserFeedback">
+          <End Role="Commoditylist" Type="Self.Commoditylist" Multiplicity="1" />
+          <End Role="UserFeedback" Type="Self.UserFeedback" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Commoditylist">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserFeedback">
+              <PropertyRef Name="CommoditylistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommodityTypeCommoditylist">
+          <End Role="CommodityType" Type="Self.CommodityType" Multiplicity="1" />
+          <End Role="Commoditylist" Type="Self.Commoditylist" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CommodityType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Commoditylist">
+              <PropertyRef Name="CommodityTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orderlist_Commoditylist">
+          <End Role="Commoditylist" Type="Self.Commoditylist" Multiplicity="1" />
+          <End Role="Orderlist" Type="Self.Orderlist" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Commoditylist">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Orderlist">
+              <PropertyRef Name="CommoditylistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_spTypeDetails_Commoditylist">
+          <End Role="Commoditylist" Type="Self.Commoditylist" Multiplicity="1" />
+          <End Role="spTypeDetails" Type="Self.spTypeDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Commoditylist">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="spTypeDetails">
+              <PropertyRef Name="CommoditylistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderlistEvaluation">
+          <End Role="Orderlist" Type="Self.Orderlist" Multiplicity="1" />
+          <End Role="Evaluation" Type="Self.Evaluation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orderlist">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Evaluation">
+              <PropertyRef Name="OrderlistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoFootprint">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="Footprint" Type="Self.Footprint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Footprint">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KnowledgeTypeKnowledge">
+          <End Role="knowledgeType" Type="Self.knowledgeType" Multiplicity="1" />
+          <End Role="KnowledgeSet" Type="Self.KnowledgeSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="knowledgeType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="KnowledgeSet">
+              <PropertyRef Name="KnowledgeTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ListenTypeListen">
+          <End Role="ListenType" Type="Self.ListenType" Multiplicity="1" />
+          <End Role="Listen" Type="Self.Listen" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ListenType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Listen">
+              <PropertyRef Name="ListenTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MerchantMerchantFeedback">
+          <End Role="Merchant" Type="Self.Merchant" Multiplicity="1" />
+          <End Role="MerchantFeedback" Type="Self.MerchantFeedback" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Merchant">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="MerchantFeedback">
+              <PropertyRef Name="MerchantID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_News_contentNews_picture">
+          <End Role="News_content" Type="Self.News_content" Multiplicity="1" />
+          <End Role="News_picture" Type="Self.News_picture" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="News_content">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="News_picture">
+              <PropertyRef Name="NewscontentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoProblem">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="Problem" Type="Self.Problem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Problem">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoShoppingCart">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="ShoppingCart" Type="Self.ShoppingCart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ShoppingCart">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommoditylistspTypeDetails">
+          <End Role="specificationType" Type="Self.specificationType" Multiplicity="1" />
+          <End Role="spTypeDetails" Type="Self.spTypeDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="specificationType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="spTypeDetails">
+              <PropertyRef Name="specificationTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserAddressOrder">
+          <End Role="UserAddress" Type="Self.UserAddress" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserAddress">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="UserAddressID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoUserAddress">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="UserAddress" Type="Self.UserAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserAddress">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoUserFeedback">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="UserFeedback" Type="Self.UserFeedback" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserFeedback">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoOrder">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoUserintegral">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="Userintegral" Type="Self.Userintegral" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Userintegral">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BabyDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ADintegral" EntityType="Self.ADintegral" />
+          <EntitySet Name="AdministratorsSet" EntityType="Self.AdministratorsSet" />
+          <EntitySet Name="Album" EntityType="Self.Album" />
+          <EntitySet Name="Announcementform" EntityType="Self.Announcementform" />
+          <EntitySet Name="BabyInfo" EntityType="Self.BabyInfo" />
+          <EntitySet Name="Brand" EntityType="Self.Brand" />
+          <EntitySet Name="chat" EntityType="Self.chat" />
+          <EntitySet Name="Collection" EntityType="Self.Collection" />
+          <EntitySet Name="Commodityconcern" EntityType="Self.Commodityconcern" />
+          <EntitySet Name="Commoditylist" EntityType="Self.Commoditylist" />
+          <EntitySet Name="Commoditypicture" EntityType="Self.Commoditypicture" />
+          <EntitySet Name="CommodityType" EntityType="Self.CommodityType" />
+          <EntitySet Name="Evaluation" EntityType="Self.Evaluation" />
+          <EntitySet Name="Footprint" EntityType="Self.Footprint" />
+          <EntitySet Name="Growthrecord" EntityType="Self.Growthrecord" />
+          <EntitySet Name="KnowledgeSet" EntityType="Self.KnowledgeSet" />
+          <EntitySet Name="knowledgeType" EntityType="Self.knowledgeType" />
+          <EntitySet Name="Listen" EntityType="Self.Listen" />
+          <EntitySet Name="ListenType" EntityType="Self.ListenType" />
+          <EntitySet Name="Merchant" EntityType="Self.Merchant" />
+          <EntitySet Name="MerchantFeedback" EntityType="Self.MerchantFeedback" />
+          <EntitySet Name="News_content" EntityType="Self.News_content" />
+          <EntitySet Name="News_picture" EntityType="Self.News_picture" />
+          <EntitySet Name="Orderlist" EntityType="Self.Orderlist" />
+          <EntitySet Name="Problem" EntityType="Self.Problem" />
+          <EntitySet Name="Sensitivewords" EntityType="Self.Sensitivewords" />
+          <EntitySet Name="ShoppingCart" EntityType="Self.ShoppingCart" />
+          <EntitySet Name="specificationType" EntityType="Self.specificationType" />
+          <EntitySet Name="spTypeDetails" EntityType="Self.spTypeDetails" />
+          <EntitySet Name="UserAddress" EntityType="Self.UserAddress" />
+          <EntitySet Name="UserFeedback" EntityType="Self.UserFeedback" />
+          <EntitySet Name="UserInfo" EntityType="Self.UserInfo" />
+          <EntitySet Name="Userintegral" EntityType="Self.Userintegral" />
+          <EntitySet Name="Order" EntityType="Self.Order" />
+          <AssociationSet Name="FK_AdministratorsADintegral" Association="Self.FK_AdministratorsADintegral">
+            <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+            <End Role="ADintegral" EntitySet="ADintegral" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdministratorsAnnouncementform" Association="Self.FK_AdministratorsAnnouncementform">
+            <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+            <End Role="Announcementform" EntitySet="Announcementform" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdministratorsKnowledgeType" Association="Self.FK_AdministratorsKnowledgeType">
+            <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+            <End Role="knowledgeType" EntitySet="knowledgeType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdministratorsListenType" Association="Self.FK_AdministratorsListenType">
+            <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+            <End Role="ListenType" EntitySet="ListenType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdministratorsMerchant" Association="Self.FK_AdministratorsMerchant">
+            <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+            <End Role="Merchant" EntitySet="Merchant" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdministratorsNews_content" Association="Self.FK_AdministratorsNews_content">
+            <End Role="AdministratorsSet" EntitySet="AdministratorsSet" />
+            <End Role="News_content" EntitySet="News_content" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BabyInfoAlbum" Association="Self.FK_BabyInfoAlbum">
+            <End Role="BabyInfo" EntitySet="BabyInfo" />
+            <End Role="Album" EntitySet="Album" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BabyInfoGrowthrecord" Association="Self.FK_BabyInfoGrowthrecord">
+            <End Role="BabyInfo" EntitySet="BabyInfo" />
+            <End Role="Growthrecord" EntitySet="Growthrecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoBabyInfo" Association="Self.FK_UserInfoBabyInfo">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="BabyInfo" EntitySet="BabyInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommoditylistBrand" Association="Self.FK_CommoditylistBrand">
+            <End Role="Commoditylist" EntitySet="Commoditylist" />
+            <End Role="Brand" EntitySet="Brand" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MerchantChat" Association="Self.FK_MerchantChat">
+            <End Role="Merchant" EntitySet="Merchant" />
+            <End Role="chat" EntitySet="chat" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoChat" Association="Self.FK_UserInfoChat">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="chat" EntitySet="chat" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommoditylistCollection" Association="Self.FK_CommoditylistCollection">
+            <End Role="Commoditylist" EntitySet="Commoditylist" />
+            <End Role="Collection" EntitySet="Collection" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoCollection" Association="Self.FK_UserInfoCollection">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="Collection" EntitySet="Collection" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MerchantCommodityconcern" Association="Self.FK_MerchantCommodityconcern">
+            <End Role="Merchant" EntitySet="Merchant" />
+            <End Role="Commodityconcern" EntitySet="Commodityconcern" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoCommodityconcern" Association="Self.FK_UserInfoCommodityconcern">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="Commodityconcern" EntitySet="Commodityconcern" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommoditylistCommoditypicture" Association="Self.FK_CommoditylistCommoditypicture">
+            <End Role="Commoditylist" EntitySet="Commoditylist" />
+            <End Role="Commoditypicture" EntitySet="Commoditypicture" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommoditylistFootprint" Association="Self.FK_CommoditylistFootprint">
+            <End Role="Commoditylist" EntitySet="Commoditylist" />
+            <End Role="Footprint" EntitySet="Footprint" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommoditylistShoppingCart" Association="Self.FK_CommoditylistShoppingCart">
+            <End Role="Commoditylist" EntitySet="Commoditylist" />
+            <End Role="ShoppingCart" EntitySet="ShoppingCart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommoditylistUserFeedback" Association="Self.FK_CommoditylistUserFeedback">
+            <End Role="Commoditylist" EntitySet="Commoditylist" />
+            <End Role="UserFeedback" EntitySet="UserFeedback" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommodityTypeCommoditylist" Association="Self.FK_CommodityTypeCommoditylist">
+            <End Role="CommodityType" EntitySet="CommodityType" />
+            <End Role="Commoditylist" EntitySet="Commoditylist" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orderlist_Commoditylist" Association="Self.FK_Orderlist_Commoditylist">
+            <End Role="Commoditylist" EntitySet="Commoditylist" />
+            <End Role="Orderlist" EntitySet="Orderlist" />
+          </AssociationSet>
+          <AssociationSet Name="FK_spTypeDetails_Commoditylist" Association="Self.FK_spTypeDetails_Commoditylist">
+            <End Role="Commoditylist" EntitySet="Commoditylist" />
+            <End Role="spTypeDetails" EntitySet="spTypeDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderlistEvaluation" Association="Self.FK_OrderlistEvaluation">
+            <End Role="Orderlist" EntitySet="Orderlist" />
+            <End Role="Evaluation" EntitySet="Evaluation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoFootprint" Association="Self.FK_UserInfoFootprint">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="Footprint" EntitySet="Footprint" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KnowledgeTypeKnowledge" Association="Self.FK_KnowledgeTypeKnowledge">
+            <End Role="knowledgeType" EntitySet="knowledgeType" />
+            <End Role="KnowledgeSet" EntitySet="KnowledgeSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ListenTypeListen" Association="Self.FK_ListenTypeListen">
+            <End Role="ListenType" EntitySet="ListenType" />
+            <End Role="Listen" EntitySet="Listen" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MerchantMerchantFeedback" Association="Self.FK_MerchantMerchantFeedback">
+            <End Role="Merchant" EntitySet="Merchant" />
+            <End Role="MerchantFeedback" EntitySet="MerchantFeedback" />
+          </AssociationSet>
+          <AssociationSet Name="FK_News_contentNews_picture" Association="Self.FK_News_contentNews_picture">
+            <End Role="News_content" EntitySet="News_content" />
+            <End Role="News_picture" EntitySet="News_picture" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoProblem" Association="Self.FK_UserInfoProblem">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="Problem" EntitySet="Problem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoShoppingCart" Association="Self.FK_UserInfoShoppingCart">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="ShoppingCart" EntitySet="ShoppingCart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommoditylistspTypeDetails" Association="Self.FK_CommoditylistspTypeDetails">
+            <End Role="specificationType" EntitySet="specificationType" />
+            <End Role="spTypeDetails" EntitySet="spTypeDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserAddressOrder" Association="Self.FK_UserAddressOrder">
+            <End Role="UserAddress" EntitySet="UserAddress" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoUserAddress" Association="Self.FK_UserInfoUserAddress">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="UserAddress" EntitySet="UserAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoUserFeedback" Association="Self.FK_UserInfoUserFeedback">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="UserFeedback" EntitySet="UserFeedback" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoOrder" Association="Self.FK_UserInfoOrder">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoUserintegral" Association="Self.FK_UserInfoUserintegral">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="Userintegral" EntitySet="Userintegral" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BabyDBModelStoreContainer" CdmEntityContainer="BabyDBEntities">
+    <EntitySetMapping Name="ADintegral">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.ADintegral)">
+        <MappingFragment StoreEntitySet="ADintegral">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Aintegral" ColumnName="Aintegral" />
+          <ScalarProperty Name="Acontent" ColumnName="Acontent" />
+          <ScalarProperty Name="Acreatetime" ColumnName="Acreatetime" />
+          <ScalarProperty Name="AIsdelete" ColumnName="AIsdelete" />
+          <ScalarProperty Name="AdministratorsID" ColumnName="AdministratorsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdministratorsSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.AdministratorsSet)">
+        <MappingFragment StoreEntitySet="AdministratorsSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Acreatetime" ColumnName="Acreatetime" />
+          <ScalarProperty Name="AIsdelete" ColumnName="AIsdelete" />
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Headimg" ColumnName="Headimg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Album">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Album)">
+        <MappingFragment StoreEntitySet="Album">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Acontent" ColumnName="Acontent" />
+          <ScalarProperty Name="Aurl" ColumnName="Aurl" />
+          <ScalarProperty Name="Atime" ColumnName="Atime" />
+          <ScalarProperty Name="Arange" ColumnName="Arange" />
+          <ScalarProperty Name="Aadress" ColumnName="Aadress" />
+          <ScalarProperty Name="AIsdelete" ColumnName="AIsdelete" />
+          <ScalarProperty Name="BabyInfoID" ColumnName="BabyInfoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Announcementform">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Announcementform)">
+        <MappingFragment StoreEntitySet="Announcementform">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Atitle" ColumnName="Atitle" />
+          <ScalarProperty Name="Acontent" ColumnName="Acontent" />
+          <ScalarProperty Name="Acreatetime" ColumnName="Acreatetime" />
+          <ScalarProperty Name="AIsdelete" ColumnName="AIsdelete" />
+          <ScalarProperty Name="AdministratorsID" ColumnName="AdministratorsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BabyInfo">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.BabyInfo)">
+        <MappingFragment StoreEntitySet="BabyInfo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Bname" ColumnName="Bname" />
+          <ScalarProperty Name="BLittle" ColumnName="BLittle" />
+          <ScalarProperty Name="BSex" ColumnName="BSex" />
+          <ScalarProperty Name="BBirthday" ColumnName="BBirthday" />
+          <ScalarProperty Name="BQRcode" ColumnName="BQRcode" />
+          <ScalarProperty Name="BHeadimg" ColumnName="BHeadimg" />
+          <ScalarProperty Name="Bconstellation" ColumnName="Bconstellation" />
+          <ScalarProperty Name="BBirthtime" ColumnName="BBirthtime" />
+          <ScalarProperty Name="Bheight" ColumnName="Bheight" />
+          <ScalarProperty Name="BWidth" ColumnName="BWidth" />
+          <ScalarProperty Name="BHeadcircumference" ColumnName="BHeadcircumference" />
+          <ScalarProperty Name="Bcreatetime" ColumnName="Bcreatetime" />
+          <ScalarProperty Name="BIsdelete" ColumnName="BIsdelete" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brand">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Brand)">
+        <MappingFragment StoreEntitySet="Brand">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BrandTitle" ColumnName="BrandTitle" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="CommoditylistID" ColumnName="CommoditylistID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chat">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.chat)">
+        <MappingFragment StoreEntitySet="chat">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ccontent" ColumnName="Ccontent" />
+          <ScalarProperty Name="CpictureUrl" ColumnName="CpictureUrl" />
+          <ScalarProperty Name="Ctime" ColumnName="Ctime" />
+          <ScalarProperty Name="Cvideo" ColumnName="Cvideo" />
+          <ScalarProperty Name="MerchantID" ColumnName="MerchantID" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Collection">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Collection)">
+        <MappingFragment StoreEntitySet="Collection">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ccreatetime" ColumnName="Ccreatetime" />
+          <ScalarProperty Name="CIsdelete" ColumnName="CIsdelete" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+          <ScalarProperty Name="CommoditylistID" ColumnName="CommoditylistID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Commodityconcern">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Commodityconcern)">
+        <MappingFragment StoreEntitySet="Commodityconcern">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ccreatetime" ColumnName="Ccreatetime" />
+          <ScalarProperty Name="CIsdelete" ColumnName="CIsdelete" />
+          <ScalarProperty Name="MerchantID" ColumnName="MerchantID" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Commoditylist">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Commoditylist)">
+        <MappingFragment StoreEntitySet="Commoditylist">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Tradename" ColumnName="Tradename" />
+          <ScalarProperty Name="ProductBrief" ColumnName="ProductBrief" />
+          <ScalarProperty Name="Displaylevel" ColumnName="Displaylevel" />
+          <ScalarProperty Name="Originalprice" ColumnName="Originalprice" />
+          <ScalarProperty Name="Currentprice" ColumnName="Currentprice" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Courierfee" ColumnName="Courierfee" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="Ccreatetime" ColumnName="Ccreatetime" />
+          <ScalarProperty Name="CIsdelete" ColumnName="CIsdelete" />
+          <ScalarProperty Name="CommodityTypeID" ColumnName="CommodityTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Commoditypicture">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Commoditypicture)">
+        <MappingFragment StoreEntitySet="Commoditypicture">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PicContend" ColumnName="PicContend" />
+          <ScalarProperty Name="pictureUrl" ColumnName="pictureUrl" />
+          <ScalarProperty Name="createtime" ColumnName="createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="CommoditylistID" ColumnName="CommoditylistID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommodityType">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.CommodityType)">
+        <MappingFragment StoreEntitySet="CommodityType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ctitle" ColumnName="Ctitle" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="Ccreatetime" ColumnName="Ccreatetime" />
+          <ScalarProperty Name="CIsdelete" ColumnName="CIsdelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Evaluation">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Evaluation)">
+        <MappingFragment StoreEntitySet="Evaluation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Econtent" ColumnName="Econtent" />
+          <ScalarProperty Name="Eimgurl" ColumnName="Eimgurl" />
+          <ScalarProperty Name="EPraise" ColumnName="EPraise" />
+          <ScalarProperty Name="EtypeID" ColumnName="EtypeID" />
+          <ScalarProperty Name="Ecreatetime" ColumnName="Ecreatetime" />
+          <ScalarProperty Name="EIsdelete" ColumnName="EIsdelete" />
+          <ScalarProperty Name="OrderlistID" ColumnName="OrderlistID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Footprint">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Footprint)">
+        <MappingFragment StoreEntitySet="Footprint">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Fcreatetime" ColumnName="Fcreatetime" />
+          <ScalarProperty Name="FIsdelete" ColumnName="FIsdelete" />
+          <ScalarProperty Name="CommoditylistID" ColumnName="CommoditylistID" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Growthrecord">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Growthrecord)">
+        <MappingFragment StoreEntitySet="Growthrecord">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Gheight" ColumnName="Gheight" />
+          <ScalarProperty Name="Gwidth" ColumnName="Gwidth" />
+          <ScalarProperty Name="GHeadcircumference" ColumnName="GHeadcircumference" />
+          <ScalarProperty Name="Gweight" ColumnName="Gweight" />
+          <ScalarProperty Name="Gcreatetime" ColumnName="Gcreatetime" />
+          <ScalarProperty Name="GIsdelete" ColumnName="GIsdelete" />
+          <ScalarProperty Name="BabyInfoID" ColumnName="BabyInfoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KnowledgeSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.KnowledgeSet)">
+        <MappingFragment StoreEntitySet="KnowledgeSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Subheading" ColumnName="Subheading" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Imgurl" ColumnName="Imgurl" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="Browsevolume" ColumnName="Browsevolume" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="KnowledgeTypeID" ColumnName="KnowledgeTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="knowledgeType">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.knowledgeType)">
+        <MappingFragment StoreEntitySet="knowledgeType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="AdministratorsID" ColumnName="AdministratorsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Listen">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Listen)">
+        <MappingFragment StoreEntitySet="Listen">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ListenName" ColumnName="ListenName" />
+          <ScalarProperty Name="MusicUrl" ColumnName="MusicUrl" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="ListenTypeID" ColumnName="ListenTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListenType">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.ListenType)">
+        <MappingFragment StoreEntitySet="ListenType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="AdministratorsID" ColumnName="AdministratorsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Merchant">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Merchant)">
+        <MappingFragment StoreEntitySet="Merchant">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Mname" ColumnName="Mname" />
+          <ScalarProperty Name="Mheadimg" ColumnName="Mheadimg" />
+          <ScalarProperty Name="Mrealname" ColumnName="Mrealname" />
+          <ScalarProperty Name="MPwd" ColumnName="MPwd" />
+          <ScalarProperty Name="MSex" ColumnName="MSex" />
+          <ScalarProperty Name="MAge" ColumnName="MAge" />
+          <ScalarProperty Name="Maddress" ColumnName="Maddress" />
+          <ScalarProperty Name="Mlevel" ColumnName="Mlevel" />
+          <ScalarProperty Name="Mphone" ColumnName="Mphone" />
+          <ScalarProperty Name="MIDnum" ColumnName="MIDnum" />
+          <ScalarProperty Name="Mbusiness" ColumnName="Mbusiness" />
+          <ScalarProperty Name="MShopphotos" ColumnName="MShopphotos" />
+          <ScalarProperty Name="MEmail" ColumnName="MEmail" />
+          <ScalarProperty Name="Mdescribe" ColumnName="Mdescribe" />
+          <ScalarProperty Name="Mcreatetime" ColumnName="Mcreatetime" />
+          <ScalarProperty Name="MIsdelete" ColumnName="MIsdelete" />
+          <ScalarProperty Name="AdministratorsID" ColumnName="AdministratorsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MerchantFeedback">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.MerchantFeedback)">
+        <MappingFragment StoreEntitySet="MerchantFeedback">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Fcontent" ColumnName="Fcontent" />
+          <ScalarProperty Name="Fimgurl" ColumnName="Fimgurl" />
+          <ScalarProperty Name="Finformation" ColumnName="Finformation" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="MerchantID" ColumnName="MerchantID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_content">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.News_content)">
+        <MappingFragment StoreEntitySet="News_content">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Already" ColumnName="Already" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="AdministratorsID" ColumnName="AdministratorsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_picture">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.News_picture)">
+        <MappingFragment StoreEntitySet="News_picture">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NewDescribe" ColumnName="NewDescribe" />
+          <ScalarProperty Name="NewpictureUrl" ColumnName="NewpictureUrl" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="NewscontentID" ColumnName="NewscontentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orderlist">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Orderlist)">
+        <MappingFragment StoreEntitySet="Orderlist">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="Order_OrderId" ColumnName="Order_OrderId" />
+          <ScalarProperty Name="CommoditylistID" ColumnName="CommoditylistID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Problem">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Problem)">
+        <MappingFragment StoreEntitySet="Problem">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Questions" ColumnName="Questions" />
+          <ScalarProperty Name="Usertime" ColumnName="Usertime" />
+          <ScalarProperty Name="answers" ColumnName="answers" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sensitivewords">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Sensitivewords)">
+        <MappingFragment StoreEntitySet="Sensitivewords">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SProhibit" ColumnName="SProhibit" />
+          <ScalarProperty Name="Sreplace" ColumnName="Sreplace" />
+          <ScalarProperty Name="Screatetime" ColumnName="Screatetime" />
+          <ScalarProperty Name="SIsdelete" ColumnName="SIsdelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShoppingCart">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.ShoppingCart)">
+        <MappingFragment StoreEntitySet="ShoppingCart">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+          <ScalarProperty Name="CommoditylistID" ColumnName="CommoditylistID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="specificationType">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.specificationType)">
+        <MappingFragment StoreEntitySet="specificationType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spTypeDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.spTypeDetails)">
+        <MappingFragment StoreEntitySet="spTypeDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="specificationTypeID" ColumnName="specificationTypeID" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="CommoditylistID" ColumnName="CommoditylistID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAddress">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.UserAddress)">
+        <MappingFragment StoreEntitySet="UserAddress">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Default" ColumnName="Default" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserFeedback">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.UserFeedback)">
+        <MappingFragment StoreEntitySet="UserFeedback">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Fcontent" ColumnName="Fcontent" />
+          <ScalarProperty Name="Fimgurl" ColumnName="Fimgurl" />
+          <ScalarProperty Name="Finformation" ColumnName="Finformation" />
+          <ScalarProperty Name="Fcreatetime" ColumnName="Fcreatetime" />
+          <ScalarProperty Name="FIsdelete" ColumnName="FIsdelete" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+          <ScalarProperty Name="CommoditylistID" ColumnName="CommoditylistID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserInfo">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.UserInfo)">
+        <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UOpenid" ColumnName="UOpenid" />
+          <ScalarProperty Name="UNickname" ColumnName="UNickname" />
+          <ScalarProperty Name="UPhone" ColumnName="UPhone" />
+          <ScalarProperty Name="UPwd" ColumnName="UPwd" />
+          <ScalarProperty Name="UHeadimg" ColumnName="UHeadimg" />
+          <ScalarProperty Name="UAge" ColumnName="UAge" />
+          <ScalarProperty Name="USex" ColumnName="USex" />
+          <ScalarProperty Name="UBirthday" ColumnName="UBirthday" />
+          <ScalarProperty Name="Uarea" ColumnName="Uarea" />
+          <ScalarProperty Name="USignature" ColumnName="USignature" />
+          <ScalarProperty Name="URealname" ColumnName="URealname" />
+          <ScalarProperty Name="Ulevel" ColumnName="Ulevel" />
+          <ScalarProperty Name="Uidentification" ColumnName="Uidentification" />
+          <ScalarProperty Name="UEmail" ColumnName="UEmail" />
+          <ScalarProperty Name="UCreatetime" ColumnName="UCreatetime" />
+          <ScalarProperty Name="UIsdelete" ColumnName="UIsdelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Userintegral">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Userintegral)">
+        <MappingFragment StoreEntitySet="Userintegral">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Uintegral" ColumnName="Uintegral" />
+          <ScalarProperty Name="CountMoney" ColumnName="CountMoney" />
+          <ScalarProperty Name="Createtime" ColumnName="Createtime" />
+          <ScalarProperty Name="Isdelete" ColumnName="Isdelete" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="IsTypeOf(BabyDBModel.Order)">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="OPriceTotal" ColumnName="OPriceTotal" />
+          <ScalarProperty Name="Onum" ColumnName="Onum" />
+          <ScalarProperty Name="Ocreatetime" ColumnName="Ocreatetime" />
+          <ScalarProperty Name="OIsdelete" ColumnName="OIsdelete" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+          <ScalarProperty Name="UserAddressID" ColumnName="UserAddressID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

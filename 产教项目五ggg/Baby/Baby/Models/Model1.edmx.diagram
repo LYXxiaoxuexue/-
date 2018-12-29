@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a07dcaca30a945bea33ecb09e524a0ce" Name="Diagram1">
+        <EntityTypeShape EntityType="BabyDBModel.ADintegral" Width="1.5" PointX="3.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.AdministratorsSet" Width="1.5" PointX="1.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Album" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Announcementform" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.BabyInfo" Width="1.5" PointX="3" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Brand" Width="1.5" PointX="8" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.chat" Width="1.5" PointX="3" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Collection" Width="1.5" PointX="6" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Commodityconcern" Width="1.5" PointX="3" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Commoditylist" Width="1.5" PointX="5.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Commoditypicture" Width="1.5" PointX="8" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.CommodityType" Width="1.5" PointX="3.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Evaluation" Width="1.5" PointX="10.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Footprint" Width="1.5" PointX="6" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Growthrecord" Width="1.5" PointX="5.25" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.KnowledgeSet" Width="1.5" PointX="6" PointY="52.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.knowledgeType" Width="1.5" PointX="3.75" PointY="53.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Listen" Width="1.5" PointX="6" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.ListenType" Width="1.5" PointX="3.75" PointY="56.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Merchant" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.MerchantFeedback" Width="1.5" PointX="3" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.News_content" Width="1.5" PointX="3.75" PointY="60" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.News_picture" Width="1.5" PointX="6" PointY="60.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Orderlist" Width="1.5" PointX="8" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Problem" Width="1.5" PointX="3" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Sensitivewords" Width="1.5" PointX="5.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.ShoppingCart" Width="1.5" PointX="8" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.specificationType" Width="1.5" PointX="8.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.spTypeDetails" Width="1.5" PointX="11" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.UserAddress" Width="1.5" PointX="3" PointY="41.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.UserFeedback" Width="1.5" PointX="9" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.UserInfo" Width="1.5" PointX="0.75" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Userintegral" Width="1.5" PointX="3" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BabyDBModel.Order" Width="1.5" PointX="5.25" PointY="30.5" IsExpanded="true" />
+        <AssociationConnector Association="BabyDBModel.FK_AdministratorsADintegral" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_AdministratorsAnnouncementform" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_AdministratorsKnowledgeType" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_AdministratorsListenType" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_AdministratorsMerchant" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_AdministratorsNews_content" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_BabyInfoAlbum" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_BabyInfoGrowthrecord" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserInfoBabyInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_CommoditylistBrand" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_MerchantChat" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserInfoChat" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_CommoditylistCollection" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserInfoCollection" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_MerchantCommodityconcern" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserInfoCommodityconcern" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_CommoditylistCommoditypicture" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_CommoditylistFootprint" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_CommoditylistShoppingCart" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_CommoditylistUserFeedback" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_CommodityTypeCommoditylist" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_Orderlist_Commoditylist" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_spTypeDetails_Commoditylist" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_OrderlistEvaluation" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserInfoFootprint" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_KnowledgeTypeKnowledge" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_ListenTypeListen" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_MerchantMerchantFeedback" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_News_contentNews_picture" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserInfoProblem" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserInfoShoppingCart" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_CommoditylistspTypeDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserAddressOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserInfoUserAddress" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserInfoUserFeedback" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserInfoOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="BabyDBModel.FK_UserInfoUserintegral" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
